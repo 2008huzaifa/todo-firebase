@@ -13,14 +13,14 @@
 #btn:hover{
     transform: scale(1.05);
     transition: 0.5s;
-    background-color: red;
+    background-color: rgb(47, 0, 255);
     color: white;
 
 }
 #btna:hover{
     transform: scale(1.05);
     transition: 0.5s;
-    background-color: red;
+    background-color: rgb(47, 0, 255);
     color: white;
 
 }
@@ -29,4 +29,7 @@ input{
 }
 #btn , #btna{
     background-color: white;
+}
+input,button{
+    font-size: 16px;
 }

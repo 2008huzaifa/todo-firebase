@@ -21,7 +21,7 @@ let btna = document.getElementById('btna')
 let change = document.getElementById('changename')
 btna.addEventListener('click', () => {
 
-    change.innerHTML = `<h1>${nametodo.value}</h1>`
+    change.innerHTML = `<h1 style="color:blue;font-size:50px">${nametodo.value}</h1>`
     getol.innerHTML = ''
     get()
 })
@@ -56,7 +56,7 @@ async function get() {
     querySnapshot.forEach((doc) => {
         //   console.log(doc.id, " => ", doc.data());
 
-        getol.innerHTML += `<li style="display: flex;justify-content: space-between;margin-top:20px;margin-bottom:20px ;background-color:rgb(211, 200, 200) ;padding:10px;border-radius:7px"><span>${doc.data().name}</span><span>
+        getol.innerHTML += `<li style="display: flex;justify-content: space-between;margin-top:20px;margin-bottom:20px ;background-color:rgb(216, 233, 240) ;padding:10px;border-radius:7px;width:280px"><span>${doc.data().name}</span><span>
 <button style="background-color: red; "onclick="delet('${doc.id}')">Delete</button>
 <button style="background-color: blue; "onclick="edit('${doc.data().name}','${doc.id}')">Edit</button> 
 </span></li>`
