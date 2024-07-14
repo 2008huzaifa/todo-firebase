@@ -57,8 +57,8 @@ async function get() {
         //   console.log(doc.id, " => ", doc.data());
 
         getol.innerHTML += `<li style="display: flex;justify-content: space-between;margin-top:20px;margin-bottom:20px ;background-color:rgb(211, 200, 200) ;padding:10px;border-radius:7px"><span>${doc.data().name}</span><span>
-<button style="background-color: red; onclick="delet('${doc.id}')">Delete</button>
-<button style="background-color: blue; onclick="edit('${doc.data().name}','${doc.id}')">Edit</button> 
+<button style="background-color: red; "onclick="delet('${doc.id}')">Delete</button>
+<button style="background-color: blue; "onclick="edit('${doc.data().name}','${doc.id}')">Edit</button> 
 </span></li>`
 
     });
